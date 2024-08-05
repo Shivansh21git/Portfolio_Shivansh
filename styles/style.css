@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Readex+Pro:wght@300;400;500;600;700&display=swap');
+
+
+* {font-family: 'Readex Pro';}
+
+
+a {
+    text-decoration: none;
+    color: rgb(13, 237, 192) !important;
+    font-weight: 500;
+}
+
+a:hover {
+    color: #d33682 !important;
+    text-decoration: none;
+}
+
+ul {list-style-type: none;}
+
+hr {
+    margin-top: 0px;
+    margin-bottom: 5%;
+}
+
+#MainMenu {visibility: hidden;}
+footer {visibility: hidden;}
+header {visibility: hidden;}
+
+
+/* 
+Increase the font size of the tab labels 
+.stTabs [data-testid="stTab"] {
+    font-size: 2rem;
+}
+
+/* Reduce the gap at the top of the page 
+.main {
+    padding-top: 1rem;
+}
+*/

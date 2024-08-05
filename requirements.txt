@@ -1,0 +1,5 @@
+streamlit
+pathlib
+google.generativeai
+streamlit_option_menu
+PIL
