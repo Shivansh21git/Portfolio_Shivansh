@@ -19,7 +19,8 @@ PAGE_TITLE = "Portfolio | Shivansh Chauhan"
 PAGE_ICON = ":wave:"
 NAME = "Shivansh Chauhan"
 DESCRIPTION = """
-IoT & Embedded enthusiast, Working hard to excel in Industry with my knowledge and 21 centuary skills.
+👋 Hello, I'm Shivansh Chauhan!
+🎓 Electronics and Communication Engineer | 💻 IoT and Embedded Systems Enthusiast | 📚 Freelancer and Educator
 """
 EMAIL = "shivanshchauhan@email.com"
 SOCIAL_MEDIA = {
@@ -213,12 +214,16 @@ if selected == "Home":
 
     
     # about me -------
-    st.title("About me")
-    st.markdown(''':blue-background[As an :red[Electrical and Computer Engineering] (ECE) professional
-                with a  strong focus on embedded systems and IoT, I am passionate about creating innovative solutions that push the boundaries of technology. With a solid background in designing and implementing smart electronic devices, I thrive on tackling complex challenges and driving technological advancements. My hands-on experience, combined with a commitment to continuous learning, allows me to contribute effectively 
-                to cutting-edge projects and deliver impactful results. I am dedicated
-                to leveraging my skills and knowledge to advance in the dynamic field
-                of embedded systems and IoT.]''')
+    st.title("🚀 About Me")
+    st.markdown(''':blue-background[As an :red[I'm a passionate Electronics and Communication Engineer with a strong focus on IoT, embedded systems, and smart devices. Skilled in using development boards like Arduino, Raspberry Pi, ESP8266, and ESP32, along with Python and C++. My innovative projects have been recognized with government funding and awards in various competitions.
+
+As an enthusiastic educator, I teach IoT, embedded systems, and PCB design to students globally (USA, Philippines, etc.) through project-based learning. I thrive on creating practical, hands-on learning experiences that inspire and empower.
+
+Let's innovate and build the future together! 🌟
+
+---
+
+How does this look?]''')
     
 
     # about me end -------------
@@ -394,6 +399,7 @@ elif selected == "Resume":
     st.write("---")
     for project, link in PROJECTS.items():
         st.write(f"[{project}]({link})")
+
 
     
 
