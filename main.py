@@ -215,15 +215,15 @@ if selected == "Home":
     
     # about me -------
     st.title("🚀 About Me")
-    st.markdown(''':blue-background[As an :red[I'm a passionate Electronics and Communication Engineer with a strong focus on IoT, embedded systems, and smart devices. Skilled in using development boards like Arduino, Raspberry Pi, ESP8266, and ESP32, along with Python and C++. My innovative projects have been recognized with government funding and awards in various competitions.
+    st.markdown(''':blue-background[As an :red[I'm a passionate Electronics and Communication] Engineer with a strong focus  
+                 on IoT, embedded systems, and smart devices. Skilled in using development boards like Arduino, Raspberry Pi,  
+                 ESP8266, and ESP32, along with Python and C++. My innovative projects have been recognized with government   
+                funding and awards in various competitions.
 
-As an enthusiastic educator, I teach IoT, embedded systems, and PCB design to students globally (USA, Philippines, etc.) through project-based learning. I thrive on creating practical, hands-on learning experiences that inspire and empower.
-
-Let's innovate and build the future together! 🌟
-
----
-
-How does this look?]''')
+As an enthusiastic educator, I teach IoT, embedded systems, and PCB design to students globally (USA, Philippines, etc.) through  
+                 project-based learning. I thrive on creating practical, hands-on learning experiences that inspire and empower.  
+                
+Let's innovate and build the future together! 🌟]''')
     
 
     # about me end -------------
