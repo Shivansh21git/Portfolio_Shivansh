@@ -145,7 +145,7 @@ model = genai.GenerativeModel('gemini-1.5-flash')
 with st.sidebar:
     selected = option_menu(
         menu_title="Portfolio",
-        options=["Home", "Resume","Projects","Gallary","Contact"],
+        options=["Home", "Resume"],
         icons=["house", "book", "phone"],
         menu_icon="cast",
         default_index=0,
@@ -395,30 +395,6 @@ elif selected == "Resume":
     for project, link in PROJECTS.items():
         st.write(f"[{project}]({link})")
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-elif selected == "Contact":
-    st.title("Contact")
-    if st.button("Email :"):
-     st.markdown(f"""
-    <script>
-        window.location.href = "{mailto_link}";
-    </script>
-""", unsafe_allow_html=True)
     
 
 
