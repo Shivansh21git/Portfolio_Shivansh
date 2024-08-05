@@ -239,15 +239,15 @@ if selected == "Home":
     # about me end -------------
 
     st.write(" ")
-    st.title("Shivansh's AI Bot")
-    st.subheader("Curious About Shivansh? 🤔 Ask me anything! 🗨️")
-    prompt = st.text_input("What's on your mind? 💭 just write here :point_down:","")
-    if st.button("ASK", use_container_width=400) : 
-      ques = prompt
-      response = model.generate_content(performa+'this is the question visitor ask'+ques)
-      expander=st.expander("Answer")
-      expander.write(response.text)
-    st.write(" ")  
+    # st.title("Shivansh's AI Bot")
+    # st.subheader("Curious About Shivansh? 🤔 Ask me anything! 🗨️")
+    # prompt = st.text_input("What's on your mind? 💭 just write here :point_down:","")
+    # if st.button("ASK", use_container_width=400) : 
+    #   ques = prompt
+    #   response = model.generate_content(performa+'this is the question visitor ask'+ques)
+    #   expander=st.expander("Answer")
+    #   expander.write(response.text)
+    # st.write(" ")  
     st.title("What I'm Doing")
     col1,col2,col3 = st.columns(3)
     st.write(" ")
@@ -309,7 +309,7 @@ elif selected == "Resume":
     click = False
     with open(resume_file, "rb") as pdf_file:
         PDFbyte = pdf_file.read()
-    profile_pic = Image.open("images/pcwb.png")
+    profile_pic = Image.open("images/dp.png")
 
 
     # --- HERO SECTION ---
