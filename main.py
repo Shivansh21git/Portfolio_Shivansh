@@ -19,8 +19,7 @@ PAGE_TITLE = "Portfolio | Shivansh Chauhan"
 PAGE_ICON = ":wave:"
 NAME = "Shivansh Chauhan"
 DESCRIPTION = """
-👋 Hello, I'm Shivansh Chauhan!
-🎓 Electronics and Communication Engineer | 💻 IoT and Embedded Systems Enthusiast | 📚 Freelancer and Educator
+Dynamic Electronics Engineer with hands-on experience in IoT, embedded systems, and PCB design. Passionate about innovation and continuous improvement in technology. 🌟🔧
 """
 EMAIL = "shivanshchauhan@email.com"
 SOCIAL_MEDIA = {
@@ -32,8 +31,8 @@ SOCIAL_MEDIA = {
 PROJECTS = {
     "🏆 ATVS - It is an anti theft system for 2 wheelers": "https://github.com/Shivansh21git/Anti-theft-vehicle-system-.git",
     "🏆 Krishi Sarthi - IoT based soil testing device ": "https://github.com/Shivansh21git/IoT-Based-project-krishi-sarthi-.git",
-    "🏆 Desktop Application - Excel2CSV converter with user settings & menubar": "https://youtu.be/LzCfNanQ_9c",
-    "🏆 MyToolBelt - Custom MS Excel add-in to combine Python & Excel": "https://pythonandvba.com/mytoolbelt/",
+    "🏆 PCB Designs - PCB designs of different modules": "https://github.com/Shivansh21git/PCB-Designs.git",
+    "🏆 Minor Projects - Projects involving Arduino interfacing with different sensors and actuators": "https://github.com/Shivansh21git/Arduino_Projects.git",
 }
 
 css_file = "styles/style.css"
@@ -215,16 +214,27 @@ if selected == "Home":
     
     # about me -------
     st.title("🚀 About Me")
-    st.markdown(''':blue-background[As an :red[I'm a passionate Electronics and Communication] Engineer with a strong focus  
-                 on IoT, embedded systems, and smart devices. Skilled in using development boards like Arduino, Raspberry Pi,  
-                 ESP8266, and ESP32, along with Python and C++. My innovative projects have been recognized with government   
-                funding and awards in various competitions.
-
-As an enthusiastic educator, I teach IoT, embedded systems, and PCB design to students globally (USA, Philippines, etc.) through  
-                 project-based learning. I thrive on creating practical, hands-on learning experiences that inspire and empower.  
-                
-Let's innovate and build the future together! 🌟]''')
-    
+    st.markdown(
+        '''
+        <style>
+            .justified-text {
+                text-align: justify;
+            }
+        </style>
+        <div class="justified-text">
+            As an <span style="background-color: green;">passionate Electronics and Communication</span> Engineer with a strong focus 
+            on <span style="background-color: green;">IoT, embedded systems, and smart devices</span>. Skilled in using development boards like 
+            <span style="background-color: green;">Arduino, Raspberry Pi, ESP8266, and ESP32</span>, along with Python and C++. My innovative projects have been 
+            recognized with government funding and awards in various competitions.
+            <br><br>
+            As an enthusiastic educator, I teach IoT, embedded systems, and PCB design to students globally (USA, Philippines, etc.) through 
+            project-based learning. I thrive on creating practical, hands-on learning experiences that inspire and empower.
+            <br><br>
+            Let's innovate and build the future together! 🌟
+        </div>
+        ''', 
+        unsafe_allow_html=True
+    )
 
     # about me end -------------
 
@@ -341,7 +351,7 @@ elif selected == "Resume":
 
     # --- SKILLS ---
     st.write('\n')
-    st.subheader("Hard Skills")
+    st.subheader("🛠️ Skills & Expertise")
     st.write(
         """
     - 👩‍💻 :blue-background[Programming:]      :green[Python (Opencv), Embedded C/C++]
@@ -352,9 +362,10 @@ elif selected == "Resume":
     )
 
 
+
     # --- WORK HISTORY ---
     st.write('\n')
-    st.subheader("Work History")
+    st.subheader("📈 Professional Experience")
     st.write("---")
 
     # --- JOB 1
@@ -362,21 +373,21 @@ elif selected == "Resume":
     st.write("June23 - Present")
     st.write(
         """
-    - ► Used PowerBI and SQL to redeﬁne and track KPIs surrounding marketing initiatives, and supplied recommendations to boost landing page conversion rate by 38%
-    - ► Led a team of 4 analysts to brainstorm potential marketing and sales improvements, and implemented A/B tests to generate 15% more client leads
-    - ► Redesigned data model through iterations that improved predictions by 12%
+    - ► Worked with 5g enabled system  modules for LBTS and BTS
+    - ► Responsible for debugging, troubleshooting and testing of multilayer pcbs  
+    - ► Engaging and coordination with Multiple teams like R&D and QC. 
     """
     )
 
     # --- JOB 2
     st.write('\n')
-    st.write("🚧", "**Data Analyst | Liberty Mutual Insurance**")
-    st.write("01/2018 - 02/2022")
+    st.write("🚧", "**Freelancer & Educator**")
+    st.write("Online")
     st.write(
         """
-    - ► Built data models and maps to generate meaningful insights from customer data, boosting successful sales eﬀorts by 12%
-    - ► Modeled targets likely to renew, and presented analysis to leadership, which led to a YoY revenue increase of $300K
-    - ► Compiled, studied, and inferred large amounts of data, modeling information to drive auto policy pricing
+
+    - ► I teach IoT, embedded systems, and PCB designing through project-based learning.
+    - ► I make projects based on client requirement 
     """
     )
 
@@ -386,9 +397,9 @@ elif selected == "Resume":
     st.write("Jul22 - Aug22")
     st.write(
         """
-    - ► Devised KPIs using SQL across company website in collaboration with cross-functional teams to achieve a 120% jump in organic traﬃc
-    - ► Analyzed, documented, and reported user survey results to improve customer communication processes by 18%
-    - ► Collaborated with analyst team to oversee end-to-end process surrounding customers' return data
+    - ► Surya Roshini pvt. ltd is India's leading Led manufacturing company with global presence
+    - ► Worked in SMD and Manual PCB assembling sections 
+    - ► learned and worked with Pcb fabrication, component soldering and component selection 
     """
     )
 
