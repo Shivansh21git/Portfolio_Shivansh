@@ -209,7 +209,7 @@ if selected == "Home":
         
     with col2:
         st.title(" ")
-        st.image("images/pc1.png",width=300)
+        st.image("images/dp1.png",width=300)
 
     
     # about me -------
@@ -222,9 +222,9 @@ if selected == "Home":
             }
         </style>
         <div class="justified-text">
-            As an <span style="background-color: green;">passionate Electronics and Communication</span> Engineer with a strong focus 
-            on <span style="background-color: green;">IoT, embedded systems, and smart devices</span>. Skilled in using development boards like 
-            <span style="background-color: green;">Arduino, Raspberry Pi, ESP8266, and ESP32</span>, along with Python and C++. My innovative projects have been 
+            As an passionate <span style="background-color: green;">Electronics and Communication</span> Engineer with a strong focus 
+            on IoT, embedded systems, and smart devices. Skilled in using development boards like 
+            Arduino, Raspberry Pi, ESP8266, and ESP32, along with Python and C++. My innovative projects have been 
             recognized with government funding and awards in various competitions.
             <br><br>
             As an enthusiastic educator, I teach IoT, embedded systems, and PCB design to students globally (USA, Philippines, etc.) through 
