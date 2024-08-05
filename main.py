@@ -209,7 +209,7 @@ if selected == "Home":
         
     with col2:
         st.title(" ")
-        st.image("images/dp1.png",width=300)
+        st.image("images/dp.png",width=300)
 
     
     # about me -------
