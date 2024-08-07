@@ -6,7 +6,7 @@ import streamlit as st
 import google.generativeai as genai
 from streamlit_option_menu import option_menu
 from PIL import Image
-# import time
+import time
 # --------------------------------------------import section end------------------------------------
 
 # ---------------------------------------------GENERAL SETTINGS ------------------------------------------
