@@ -18,7 +18,7 @@ from PIL import Image
 
 PAGE_TITLE = "Portfolio | Shivansh Chauhan"
 PAGE_ICON = ":wave:"
-NAME = "Shivansh Chauhanscacac"
+NAME = "Shivansh Chauhan"
 DESCRIPTION = """
 Dynamic Electronics Engineer with hands-on experience in IoT, embedded systems, and PCB design. Passionate about innovation and continuous improvement in technology. 🌟🔧
 """
@@ -122,17 +122,17 @@ def cont():
          
 def downRes():
     st.balloons()
-    # # Create a placeholder
-    # placeholder = st.empty()
+    # Create a placeholder
+    placeholder = st.empty()
 
-    # # Show success message
-    # placeholder.success('Downloaded Successfully!',icon="✔")
+    # Show success message
+    placeholder.success('Downloaded Successfully!',icon="✔")
 
-    # # # Wait for 3 seconds
-    # # time.sleep(3)
+    # # Wait for 3 seconds
+    time.sleep(3)
 
-    # # # Clear the placeholder
-    # placeholder.empty()
+    # # Clear the placeholder
+    placeholder.empty()
 
          
 # --------------------------------------------Dialogue/Functions section end---------------------------------------
