@@ -326,9 +326,9 @@ elif selected == "Resume":
 
 
     # --- HERO SECTION ---
-    col1, col2 = st.columns(2)
+    col1, col2 = st.columns(2,gap="small")
     with col1:
-        st.image(profile_pic, width=230)
+        st.image(profile_pic, width=270)
 
     with col2:
         st.title(NAME)
