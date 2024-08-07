@@ -33,7 +33,7 @@ PROJECTS = {
     "🏆 ATVS - It is an anti theft system for 2 wheelers": "https://github.com/Shivansh21git/Anti-theft-vehicle-system-.git",
     "🏆 Krishi Sarthi - IoT based soil testing device ": "https://github.com/Shivansh21git/IoT-Based-project-krishi-sarthi-.git",
     "🏆 PCB Designs - PCB designs of different modules": "https://github.com/Shivansh21git/PCB-Designs.git",
-    "🏆 Minor Projects - Projects involving Arduino interfacing with different sensors and actuators": "https://github.com/Shivansh21git/Arduino_Projects.git",
+    "🏆 Minor Projects - Projects involving Arduino interfacing with different sensors     and actuators": "https://github.com/Shivansh21git/Arduino_Projects.git",
 }
 
 css_file = "styles/style.css"
