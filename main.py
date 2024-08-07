@@ -18,7 +18,7 @@ import time
 
 PAGE_TITLE = "Portfolio | Shivansh Chauhan"
 PAGE_ICON = ":wave:"
-NAME = "Shivansh Chauhan"
+NAME = "Shivansh Chauhanjgjhgjgj"
 DESCRIPTION = """
 Dynamic Electronics Engineer with hands-on experience in IoT, embedded systems, and PCB design. Passionate about innovation and continuous improvement in technology. 🌟🔧
 """
