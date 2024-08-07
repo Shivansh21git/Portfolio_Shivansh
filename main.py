@@ -39,7 +39,7 @@ PROJECTS = {
 css_file = "styles/style.css"
 resume_file = "info/shivansh_Iot_Embedded_resume.pdf"
 
-st.set_page_config(page_title=PAGE_TITLE,page_icon=PAGE_ICON,layout="wide",initial_sidebar_state="auto")
+st.set_page_config(page_title=PAGE_TITLE,page_icon=PAGE_ICON,layout="centered",initial_sidebar_state="auto")
 with open(css_file) as f:
     st.markdown("<style>{}</style>".format(f.read()), unsafe_allow_html=True)
 
