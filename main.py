@@ -18,7 +18,7 @@ from PIL import Image
 
 PAGE_TITLE = "Portfolio | Shivansh Chauhan"
 PAGE_ICON = ":wave:"
-NAME = "Shivansh Chauhanjgjhgjgj"
+NAME = "Shivansh Chauhan"
 DESCRIPTION = """
 Dynamic Electronics Engineer with hands-on experience in IoT, embedded systems, and PCB design. Passionate about innovation and continuous improvement in technology. 🌟🔧
 """
@@ -215,7 +215,7 @@ if selected == "Home":
     with col1:
         st.title(" ")
         st.subheader("Hi :wave:")
-        st.title(":rainbow[I am Shivansh Chauhan]")
+        st.title(":rainbow[I am Shivansh Chauhandcsvsv]")
         if st.button("📬Contact me!"):
             cont()
          
