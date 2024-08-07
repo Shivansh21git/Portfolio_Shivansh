@@ -6,6 +6,7 @@ import streamlit as st
 import google.generativeai as genai
 from streamlit_option_menu import option_menu
 from PIL import Image
+import time
 # --------------------------------------------import section end------------------------------------
 
 # ---------------------------------------------GENERAL SETTINGS ------------------------------------------
@@ -67,7 +68,9 @@ tel_link = f"tel:{phone_number}"
 # --------------------------------------------Performa start-------------------------------------------
 
 performa = ''' you are an answering bot and will answer on belhalf of me (i.e, shivansh chauhan). you will answer questions ask by page visitors on my portfolio website as first person and if you dont know about something then just answer 'That's a secret🤫, contact me for this information'.     
-
+I am shivansh chauhan i am an electronics and communication engineer completed my bachelors of technology from moradabad institute of technology, moradabad(mit) which is affiliated from AKTU i.e., Dr. APJ Abdul Kalam Technology lucknow previously known as 
+uttar pradesh technical university. i have completed my degree in 2023. it was a 4 year course in which i have studied core electronics along with it i have gained knowledge in related technologies like Embedded, IOT, PCB Designing, #d printing, Digital electronics, etc and i have made varous 
+electronics projects in academic life. i havwe worked with various microcontroller and developement boards like arduino famiy boards, esp boards and raspberrypi. 
 
 
 
@@ -119,7 +122,17 @@ def cont():
          
 def downRes():
     st.balloons()
-    st.success('Downloaded Successfully!',icon="✔")
+    # Create a placeholder
+    placeholder = st.empty()
+
+    # Show success message
+    placeholder.success('Downloaded Successfully!',icon="✔")
+
+    # Wait for 3 seconds
+    time.sleep(3)
+
+    # Clear the placeholder
+    placeholder.empty()
 
          
 # --------------------------------------------Dialogue/Functions section end---------------------------------------
@@ -410,12 +423,5 @@ elif selected == "Resume":
     st.write("---")
     for project, link in PROJECTS.items():
         st.write(f"[{project}]({link})")
-
-
-    
-
-
-
-
 
 
