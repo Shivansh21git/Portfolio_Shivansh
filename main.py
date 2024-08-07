@@ -6,7 +6,7 @@ import streamlit as st
 import google.generativeai as genai
 from streamlit_option_menu import option_menu
 from PIL import Image
-import time
+# import time
 # --------------------------------------------import section end------------------------------------
 
 # ---------------------------------------------GENERAL SETTINGS ------------------------------------------
@@ -122,17 +122,17 @@ def cont():
          
 def downRes():
     st.balloons()
-    # Create a placeholder
-    placeholder = st.empty()
+    # # Create a placeholder
+    # placeholder = st.empty()
 
-    # Show success message
-    placeholder.success('Downloaded Successfully!',icon="✔")
+    # # Show success message
+    # placeholder.success('Downloaded Successfully!',icon="✔")
 
-    # Wait for 3 seconds
-    time.sleep(3)
+    # # # Wait for 3 seconds
+    # # time.sleep(3)
 
-    # Clear the placeholder
-    placeholder.empty()
+    # # # Clear the placeholder
+    # placeholder.empty()
 
          
 # --------------------------------------------Dialogue/Functions section end---------------------------------------
