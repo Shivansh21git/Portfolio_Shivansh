@@ -488,7 +488,7 @@ elif selected == "Contact":
     <div class="form-group" style="margin-top: 15px;">
       <textarea placeholder="Your Message" class="form-control" name="message" rows="5" required style="width: 97%; padding: 10px; border-radius: 5px; border: 1px solid #ced4da;"></textarea>
     </div>
-    <button type="submit" class="btn btn-lg btn-dark btn-block" style="background-color: #343a40; color: #ffffff; padding: 12px; border: none; border-radius: 5px; width: 100%; margin-top: 20px;">Submit Form</button>
+    <button type="submit" class="btn btn-lg btn-dark btn-block" style="background-color: #0dedc0; color: #ffffff; padding: 12px; border: none; border-radius: 5px; width: 100%; margin-top: 20px;">Submit Form</button>
   </form>
 </div>
 """,width=750, height=400)
