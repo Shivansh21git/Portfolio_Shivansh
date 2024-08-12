@@ -248,6 +248,8 @@ with st.sidebar:
 
 
 
+
+
 # --------------------------------------------Home section start-------------------------------------------
 
 if selected == "Home":
@@ -371,7 +373,8 @@ elif selected == "Resume":
         st.image(profile_pic, width=270)
 
     with col2:
-        st.title(NAME)
+        
+        st.header(NAME)
         st.write(DESCRIPTION)
         st.download_button(
             label=" 📄 Download Resume",
@@ -488,7 +491,7 @@ elif selected == "Contact":
     <button type="submit" class="btn btn-lg btn-dark btn-block" style="background-color: #343a40; color: #ffffff; padding: 12px; border: none; border-radius: 5px; width: 100%; margin-top: 20px;">Submit Form</button>
   </form>
 </div>
-""",width=750, height=500)
+""",width=750, height=400)
 
 
 
