@@ -472,7 +472,7 @@ elif selected == "Resume":
 elif selected == "Contact":
  with st.container():
   st.header("Contact Me!📬",divider=True)
-  components.html("""<div class="container" style="max-width: 700px; margin: 0 auto; padding: 20px; background-color: #f8f9fa; border-radius: 10px; box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);">
+  components.html("""<div class="container" style="max-width: 700px; margin: 0 auto; padding: 20px; background-color: #33555e; border-radius: 10px; box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);">
   <h1 style="text-align: center; color: #343a40; margin-bottom: 20px;">Contact Me</h1>
   <form target="_blank" action="https://formsubmit.co/shivanshchauhan.228@gmail.com" method="POST">
     <div class="form-group">
