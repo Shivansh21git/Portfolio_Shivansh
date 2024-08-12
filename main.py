@@ -10,6 +10,7 @@ import time
 import pandas as pd
 import pydeck as pdk
 import streamlit.components.v1 as components
+import requests
 # --------------------------------------------import section end------------------------------------
 
 # ---------------------------------------------GENERAL SETTINGS ------------------------------------------
@@ -89,7 +90,43 @@ electronics projects in academic life. i havwe worked with various microcontroll
 # --------------------------------------------Performa end-------------------------------------------
 
 
+#------------------------------------------------All HTML CODES---------------------------------------------
 
+html_code_name = """
+<div class="typewriter">
+  <h1>I am Shivansh Chauhan</h1>
+</div>
+
+<style>
+.typewriter h1 {
+  color: #ffffff; /* Change text color if necessary */
+  font-family: monospace;
+  overflow: hidden; /* Ensures the content is hidden outside the element's area */
+  border-right: .15em solid orange; /* Creates the cursor effect */
+  white-space: nowrap; /* Keeps the text in a single line */
+  margin: 0; /* Adjust as needed */
+  letter-spacing: .02em; /* Adjusts the spacing between characters */
+  animation:
+    typing 1.5s steps(40, end),
+    blink-caret .75s step-end infinite;
+}
+
+@keyframes typing {
+  from { width: 0 }
+  to { width: 80% }
+}
+
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: orange }
+}
+</style>
+"""
+
+
+
+
+#------------------------------------------------HTML CODES END----------------------------------------------
 
 # --------------------------------------------Dialogue/Function section start---------------------------------------
 
@@ -215,19 +252,18 @@ with st.sidebar:
 
 if selected == "Home":
     col1, col2 = st.columns(2,gap="medium",vertical_alignment= "top")
+    with col2:
+        st.title(" ")
+        st.image("images/dp.png",width=300)
     with col1:
         st.title(" ")
         st.subheader("Hi :wave:")
-        st.title(":rainbow[I am Shivansh Chauhan]")
+        st.markdown(html_code_name, unsafe_allow_html=True)
         if st.button("📬Contact me!"):
             cont()
          
         
-    with col2:
-        st.title(" ")
-        st.image("images/dp.png",width=300)
-
-    
+    st.write("---")
     # about me -------
     st.title("🚀 About Me")
     st.markdown(
@@ -253,7 +289,7 @@ if selected == "Home":
     )
 
     # about me end -------------
-
+    st.write("---")
     st.write(" ")
     # st.title("Shivansh's AI Bot")
     # st.subheader("Curious About Shivansh? 🤔 Ask me anything! 🗨️")
@@ -288,6 +324,7 @@ if selected == "Home":
         t31= st.container(height=310)
         t31.header("Computer Vision")
         t31.image("images/eye.png") 
+    st.write("---")
     st.write(" ")
     st.title(":red[Checkout My Youtube]")
     st.write(" ")
@@ -430,14 +467,38 @@ elif selected == "Resume":
 
 
 elif selected == "Contact":
-    with st.container():
-     st.header("Location",divider=True)
+ with st.container():
+  st.header("Contact Me!📬",divider=True)
+  components.html("""<div class="container" style="max-width: 600px; margin: 0 auto; padding: 20px; background-color: #f8f9fa; border-radius: 10px; box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);">
+  <h1 style="text-align: center; color: #343a40; margin-bottom: 20px;">Contact Me</h1>
+  <form target="_blank" action="https://formsubmit.co/shivanshchauhan.228@gmail.com" method="POST">
+    <div class="form-group">
+      <div class="form-row" style="display: flex; gap: 10px;">
+        <div class="col" style="flex: 1;">
+          <input type="text" name="name" class="form-control" placeholder="Full Name" required style="padding: 10px; border-radius: 5px; border: 1px solid #ced4da;">
+        </div>
+        <div class="col" style="flex: 1;">
+          <input type="email" name="email" class="form-control" placeholder="Email Address" required style="padding: 10px; border-radius: 5px; border: 1px solid #ced4da;">
+        </div>
+      </div>
+    </div>
+    <div class="form-group" style="margin-top: 15px;">
+      <textarea placeholder="Your Message" class="form-control" name="message" rows="5" required style="width: 97%; padding: 10px; border-radius: 5px; border: 1px solid #ced4da;"></textarea>
+    </div>
+    <button type="submit" class="btn btn-lg btn-dark btn-block" style="background-color: #343a40; color: #ffffff; padding: 12px; border: none; border-radius: 5px; width: 100%; margin-top: 20px;">Submit Form</button>
+  </form>
+</div>
+""",width=750, height=500)
 
 
+
+
+
+ with st.container():
+     st.header("Location 📍",divider=True)
 
      google_map_url = """
      <<div style="border: 2px solid #4CAF50; border-radius: 10px; box-shadow: 0px 0px 20px #FFFFFF; overflow: hidden;">
 <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1747.636249576419!2d78.7535779!3d28.8307461!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390afbf35076ff39%3A0x776f6777e59bbce6!2s825%2C%20Prakash%20Nagar%2C%20Prem%20Nagar%2C%20Line%20Par%2C%20Moradabad%2C%20Uttar%20Pradesh%20244001!5e0!3m2!1sen!2sin!4v1723144200234!5m2!1sen!2sin" width="700" height="480" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>"""
 
-    components.html(google_map_url, width=700, height=500)
-
+     components.html(google_map_url, width=700, height=500)
