@@ -7,6 +7,9 @@ import google.generativeai as genai
 from streamlit_option_menu import option_menu
 from PIL import Image
 import time
+import pandas as pd
+import pydeck as pdk
+import streamlit.components.v1 as components
 # --------------------------------------------import section end------------------------------------
 
 # ---------------------------------------------GENERAL SETTINGS ------------------------------------------
@@ -158,8 +161,8 @@ model = genai.GenerativeModel('gemini-1.5-flash')
 with st.sidebar:
     selected = option_menu(
         menu_title="Portfolio",
-        options=["Home", "Resume"],
-        icons=["house", "book", "phone"],
+        options=["Home", "Resume","Contact"],
+        icons=["house", "book", "bi bi-person-lines-fill"],
         menu_icon="cast",
         default_index=0,
         key="sidebar_menu",
@@ -424,4 +427,17 @@ elif selected == "Resume":
     for project, link in PROJECTS.items():
         st.write(f"[{project}]({link})")
 
+
+
+elif selected == "Contact":
+    with st.container():
+     st.header("Location",divider=True)
+
+
+
+     google_map_url = """
+     <<div style="border: 2px solid #4CAF50; border-radius: 10px; box-shadow: 0px 0px 20px #FFFFFF; overflow: hidden;">
+<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1747.636249576419!2d78.7535779!3d28.8307461!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390afbf35076ff39%3A0x776f6777e59bbce6!2s825%2C%20Prakash%20Nagar%2C%20Prem%20Nagar%2C%20Line%20Par%2C%20Moradabad%2C%20Uttar%20Pradesh%20244001!5e0!3m2!1sen!2sin!4v1723144200234!5m2!1sen!2sin" width="700" height="480" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>"""
+
+    components.html(google_map_url, width=700, height=500)
 

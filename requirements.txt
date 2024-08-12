@@ -3,3 +3,6 @@ pathlib
 google.generativeai
 streamlit_option_menu
 Pillow
+pandas
+pydeck
+streamlit.components.v1
