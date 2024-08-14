@@ -94,7 +94,7 @@ electronics projects in academic life. i havwe worked with various microcontroll
 
 html_code_name = """
 <div class="typewriter">
-  <h1>I am Shiv</h1>
+  <h1>I am Shivansh chauhan</h1>
 </div>
 
 <style>
