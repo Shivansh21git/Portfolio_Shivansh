@@ -262,8 +262,8 @@ if selected == "Home":
         st.image("images/dp.png",width=300)
     with col1:
         st.title(" ")
-        cont = st.container()
         st.subheader("Hi :wave:")
+        cont = st.container()
         cont.markdown(html_code_name, unsafe_allow_html=True)
         if st.button("📬Contact me!"):
             cont()
