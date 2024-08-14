@@ -183,9 +183,9 @@ def downRes():
 # --------------------------------------------AI config start-------------------------------------------  
 
 
-api=st.secrets["key"]
-genai.configure(api_key=api)
-model = genai.GenerativeModel('gemini-1.5-flash')
+# api=st.secrets["key"]
+# genai.configure(api_key=api)
+# model = genai.GenerativeModel('gemini-1.5-flash')
 
 
 # --------------------------------------------AI config end-------------------------------------------
