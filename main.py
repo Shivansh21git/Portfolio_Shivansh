@@ -94,7 +94,7 @@ electronics projects in academic life. i havwe worked with various microcontroll
 
 html_code_name = """
 <div class="typewriter">
-  <h1>I am Shivansh Chauhan</h1>
+  <h1>I am Shiv</h1>
 </div>
 
 <style>
@@ -181,13 +181,11 @@ def downRes():
 
 
 # --------------------------------------------AI config start-------------------------------------------  
-# api=st.secrets["key"]
-# genai.configure(api_key=api)
-# model = genai.GenerativeModel('gemini-1.5-flash')
 
-# genai.configure(api_key="AIzaSyByMxItTSintXya8ZxcfIrIVK4QRKaYbsg")
-# model = genai.GenerativeModel('gemini-1.5-flash')
 
+api=st.secrets["key"]
+genai.configure(api_key=api)
+model = genai.GenerativeModel('gemini-1.5-flash')
 
 
 # --------------------------------------------AI config end-------------------------------------------
