@@ -41,7 +41,7 @@ PROJECTS = {
 }
 
 css_file = "styles/style.css"
-resume_file = "info/shivansh_Iot_Embedded_tn.pdf"
+resume_file = "info/shivansh_Iot_Embedded_f.pdf"
 
 st.set_page_config(page_title=PAGE_TITLE,page_icon=PAGE_ICON,layout="centered",initial_sidebar_state="auto")
 with open(css_file) as f:
