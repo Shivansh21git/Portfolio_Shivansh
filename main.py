@@ -383,7 +383,7 @@ elif selected == "Resume":
         st.download_button(
             label=" 📄 Download Resume",
             data=PDFbyte,
-            file_name="shivansh_Iot_Embedded_resume.pdf",
+            file_name="shivansh_Iot_Embedded_t.pdf",
             mime="application/octet-stream",on_click=downRes)
         
         st.write("📫", EMAIL)
