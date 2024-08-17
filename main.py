@@ -41,7 +41,7 @@ PROJECTS = {
 }
 
 css_file = "styles/style.css"
-resume_file = "info/shivansh_Iot_Embedded_resume.pdf"
+resume_file = "info/shivansh_Iot_Embedded_t.pdf"
 
 st.set_page_config(page_title=PAGE_TITLE,page_icon=PAGE_ICON,layout="centered",initial_sidebar_state="auto")
 with open(css_file) as f:
@@ -383,7 +383,7 @@ elif selected == "Resume":
         st.download_button(
             label=" 📄 Download Resume",
             data=PDFbyte,
-            file_name="shivansh_Iot_Embedded_t.pdf",
+            file_name="shivansh_Iot_Embedded.pdf",
             mime="application/octet-stream",on_click=downRes)
         
         st.write("📫", EMAIL)
