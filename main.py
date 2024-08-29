@@ -577,12 +577,12 @@ elif selected =="Work":
         project_list = [
             {"title": "Krishi Sarthi Enclosure", 
             "image": "images/kenc.jpg", 
-            "description": "Designed and 3D printed a functional prosthetic hand for amputees, focusing on affordability and ease of use.",
+            "description": "Designed and 3D printed a functional Enclosure for a Project PCB, focusing on affordability and Durability.",
             "tech": "Fusion 360, PLA Material"},
             
             {"title": "Wled Enclosure", 
             "image": "https://via.placeholder.com/150", 
-            "description": "Developed a lightweight yet durable drone frame, optimized for stability and ease of assembly.",
+            "description": "Developed a lightweight yet durable Controller Enclosure, optimized for stability and ease of assembly.",
             "tech": "Fusion 360, PLA Material"},
         ]
         for project in project_list:
@@ -603,13 +603,13 @@ elif selected =="Work":
         project_list = [
             {"title": "LED Control", 
             "image": "https://via.placeholder.com/150", 
-            "description": "Developed a facial recognition system for secure access control. The system identifies individuals in real-time and grants or denies access based on a pre-set database.",
+            "description": "Developed a Led controller by impementing  finger recognition and counting module which then controll the led numbers on hardware side.",
             "tech": "OpenCV, Python, VS-Code",
             "link": "https://github.com/Shivansh21git/Open_cv-Projects/tree/main/LED%20Controller"},
             
             {"title": "LED Brightness Control", 
             "image": "https://via.placeholder.com/150", 
-            "description": "Created an object detection system for autonomous vehicles that identifies pedestrians, vehicles, and road signs in real-time.",
+            "description": "Created an Module for hand detection and finger distance measurments which then uses to control the led brightness according to that measuremenr .",
             "tech": "OpenCV, VS-Code, Python",
             "link": "https://github.com/Shivansh21git/Open_cv-Projects/tree/main/led_brightness_controll"},
         ]
