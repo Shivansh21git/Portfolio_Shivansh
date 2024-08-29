@@ -31,7 +31,7 @@ SOCIAL_MEDIA = {
     "YouTube": "https://youtube.com/@electronicsnoob?si=YydMrmLal3k5RsWK",
     "LinkedIn": "https://www.linkedin.com/in/shivanshchauhan2001",
     "GitHub": "https://github.com/Shivansh21git",
-    "Superprof": "https://www.superprof.co.in/dashboard.html/my-profile/",
+    # "Superprof": "https://www.superprof.co.in/dashboard.html/my-profile/",
 }   
 PROJECTS = {
     "🏆 ATVS - It is an anti theft system for 2 wheelers": "https://github.com/Shivansh21git/Anti-theft-vehicle-system-.git",
