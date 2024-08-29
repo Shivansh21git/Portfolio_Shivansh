@@ -576,7 +576,7 @@ elif selected =="Work":
         st.subheader("📐 3D Designing Projects")
         project_list = [
             {"title": "Krishi Sarthi Enclosure", 
-            "image": "images/kenc.jpg", 
+            "image": "images/kenc.jpeg", 
             "description": "Designed and 3D printed a functional Enclosure for a Project PCB, focusing on affordability and Durability.",
             "tech": "Fusion 360, PLA Material"},
             
