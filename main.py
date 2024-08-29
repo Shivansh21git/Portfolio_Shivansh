@@ -201,7 +201,7 @@ def downRes():
 with st.sidebar:
     selected = option_menu(
         menu_title="Portfolio",
-        options=["Home", "Resume","Contact"],
+        options=["Home", "Resume","Work","Contact"],
         icons=["house", "book", "bi bi-person-lines-fill"],
         menu_icon="cast",
         default_index=0,
@@ -470,6 +470,203 @@ elif selected == "Resume":
     st.write("---")
     for project, link in PROJECTS.items():
         st.write(f"[{project}]({link})")
+
+
+
+
+
+elif selected =="Work":
+    # st.title(":rainbow[Something]")
+    # Featured Projects Section
+
+# Page title
+# Page title
+    st.title(":red[My Projects Showcase]")
+
+    # Dropdown menu for project categories
+    category = st.selectbox("Select a category to view projects:", 
+                            ("Featured Projects", "PCB Designing", "IoT Projects", 
+                            "3D Designing", "OpenCV Projects"))
+    video_file = open("images/Testing.mp4", "rb")
+    video_bytes = video_file.read()
+    # Display selected category projects
+    if category == "Featured Projects":
+        st.subheader("🚀 Featured Project")
+        col1, col2 = st.columns(2)
+        with col1:
+            st.image("images/Device.jpeg", caption="End Device", use_column_width=True)
+            
+        with col2:
+            st.markdown("""
+            **:green[Project Name]:** Krishi Sarthi  
+            **:green[Technologies Used]:** Esp32, Firebase, Mit App Inventor, C++    
+            **:green[Summary]:** Krishi Sarthi is an innovative smart agriculture solution designed to optimize crop production by closely monitoring soil health. By leveraging cutting-edge technology such as IoT sensors, GSM modules, and data analytics.  
+            """)
+            st.link_button("Learn More about this project","https://github.com/Shivansh21git/IoT-Based-project-krishi-sarthi-.git")
+                            
+                # st.write("Redirecting to detailed project page...")  # Replace this with an actual link if needed
+        st.write(" ")
+        st.video(video_bytes)
+        st.write("---")
+
+    elif category == "PCB Designing":
+        st.subheader("🔧 PCB Designing Projects")
+        st.write(" ")
+        project_list = [
+            {"title": "Neopixel LED Controller", 
+            "image": "images/wled-2.png", 
+            "description": "Designed a custom PCB for an Neopixel Led controller that includes a microcontroller, sensors, and Control circuits.",
+            "tech": "KiCad, THT"},
+            
+            {"title": "Home Automation Controller", 
+            "image": "images/HOME AUTOMATION2.png", 
+            "description": "Developed a custom PCB for home automation, emphasizing accessibility and ease of use, leveraging the power of IoT for seamless control and management.",
+            "tech": "KiCad, Advanced Circuitry"
+            },
+            
+            {"title": "Soil Monitoring Device", 
+            "image": "images/fl.jpg", 
+            "description": "Developed a custom PCB for soil monitoring Device which consist of a microcontroller like esp9266 and a Rs485 Module along with DC Buck Convertor.",
+            "tech": "Flux, Online editor"
+            },
+        ]
+        for project in project_list:
+            with st.container():
+                col1, col2 = st.columns([1, 3])
+                with col1:
+                    st.image(project["image"],caption="Click enlarge arrow to zoom ", use_column_width=True)
+                with col2:
+                    st.markdown(f"**:green[{project['title']}]**")
+                    st.write(project["description"])
+                    st.write(f"**:green[Technologies Used:]** {project['tech']}")
+                    st.link_button(f"View {project['title']}","https://github.com/Shivansh21git/PCB-Designs/tree/main/pcb%20des")
+    
+            st.write("---")
+
+    elif category == "IoT Projects":
+        st.subheader("🌐 IoT Projects")
+        st.write(" ")
+        project_list = [
+            {"title": "Drunken Driver", 
+            "image": "images/DD-test-im1.jpg", 
+            "description": "Drunken Driver is an IoT-based solution that uses an MQ2 sensor to detect alcohol levels and send alerts via GSM. The project aims to monitor alcohol levels in the vehicle and send an SMS alert if a high alcohol level is detected, indicating that the driver might be drunk",
+            "tech": "AVR, GSM, MQ2.",
+            "link": "https://github.com/Shivansh21git/A-Drunken-driver"},
+            
+            {"title": "CloudSwitch", 
+            "image": "images/CSW-im.jpg", 
+            "description": "Effortlessly Control Your Devices Anywhere, Anytime with Firebase, ESP8266 & MIT-App Inventor. CloudSwitch is your gateway to smart, efficient control.",
+            "tech": "Esp8266, Firebase, MIT App Invent",
+            "link": "https://github.com/Shivansh21git/CloudSwitch"},
+        ]
+        for project in project_list:
+            with st.container():
+                col1, col2 = st.columns([1, 3])
+                with col1:
+                    st.image(project["image"], use_column_width=True)
+                with col2:
+                    st.markdown(f"**:green[{project['title']}]**")
+                    st.write(project["description"])
+                    st.write(f"**:green[Technologies Used:]** {project['tech']}")
+                    st.link_button(f"View {project['title']}",f"{project['link']}")
+                        # st.write(f"Redirecting to {project['title']}...")  # Replace with actual link
+            st.write("---")
+
+    elif category == "3D Designing":
+        st.subheader("📐 3D Designing Projects")
+        project_list = [
+            {"title": "Krishi Sarthi Enclosure", 
+            "image": "images/kenc.jpg", 
+            "description": "Designed and 3D printed a functional prosthetic hand for amputees, focusing on affordability and ease of use.",
+            "tech": "Fusion 360, PLA Material"},
+            
+            {"title": "Wled Enclosure", 
+            "image": "https://via.placeholder.com/150", 
+            "description": "Developed a lightweight yet durable drone frame, optimized for stability and ease of assembly.",
+            "tech": "Fusion 360, PLA Material"},
+        ]
+        for project in project_list:
+            with st.container():
+                col1, col2 = st.columns([1, 3])
+                with col1:
+                    st.image(project["image"], use_column_width=True)
+                with col2:
+                    st.markdown(f"**{project['title']}**")
+                    st.write(project["description"])
+                    st.write(f"**Technologies Used:** {project['tech']}")
+                    if st.button(f"View {project['title']}"):
+                        st.write(f"Redirecting to {project['title']}...")  # Replace with actual link
+            st.write("---")
+
+    elif category == "OpenCV Projects":
+        st.subheader("🔍 OpenCV Projects")
+        project_list = [
+            {"title": "LED Control", 
+            "image": "https://via.placeholder.com/150", 
+            "description": "Developed a facial recognition system for secure access control. The system identifies individuals in real-time and grants or denies access based on a pre-set database.",
+            "tech": "OpenCV, Python, VS-Code",
+            "link": "https://github.com/Shivansh21git/Open_cv-Projects/tree/main/LED%20Controller"},
+            
+            {"title": "LED Brightness Control", 
+            "image": "https://via.placeholder.com/150", 
+            "description": "Created an object detection system for autonomous vehicles that identifies pedestrians, vehicles, and road signs in real-time.",
+            "tech": "OpenCV, VS-Code, Python",
+            "link": "https://github.com/Shivansh21git/Open_cv-Projects/tree/main/led_brightness_controll"},
+        ]
+        for project in project_list:
+            with st.container():
+                col1, col2 = st.columns([1, 3])
+                with col1:
+                    st.image(project["image"], use_column_width=True)
+                with col2:
+                    st.markdown(f"**:green[{project['title']}]**")
+                    st.write(project["description"])
+                    st.write(f"**:green[Technologies Used:]** {project['tech']}")
+                    st.link_button(f"View {project['title']}",f"{project['link']}") 
+                        # st.write(f"Redirecting to {project['title']}...")  # Replace with actual link
+            st.write("---")
+
+    # elif category == "Other Projects":
+    #     st.subheader("💼 Other Projects")
+    #     st.write(" ")
+    #     project_list = [
+    #         {"title": "Automated Plant Watering System", 
+    #         "image": "https://via.placeholder.com/150", 
+    #         "description": "A small-scale project designed to automate the watering of plants. It uses soil moisture levels to determine when to water.",
+    #         "tech": "Arduino, Soil Moisture Sensor"},
+            
+    #         {"title": "Weather Station", 
+    #         "image": "https://via.placeholder.com/150", 
+    #         "description": "A simple weather station that measures and logs temperature and humidity data, accessible via a web dashboard.",
+    #         "tech": "Raspberry Pi, DHT11 Sensor, Python"},
+    #     ]
+    #     for project in project_list:
+    #         with st.container():
+    #             col1, col2 = st.columns([1, 3])
+    #             with col1:
+    #                 st.image(project["image"], use_column_width=True)
+    #             with col2:
+    #                 st.markdown(f"**{project['title']}**")
+    #                 st.write(project["description"])
+    #                 st.write(f"**Technologies Used:** {project['tech']}")
+    #                 if st.button(f"View {project['title']}"):
+    #                     st.write(f"Redirecting to {project['title']}...")  # Replace with actual link
+    #         st.write("---")
+
+
+    # Call to Action
+    st.subheader("Explore More Work ✨")
+    st.link_button("Visit My Github","https://github.com/Shivansh21git")
+    st.write("---")
+
+
+    # Call to Action
+    st.subheader("Want to work with me?")
+    st.write("Feel free to reach out if you'd like to collaborate on a project or just have a chat about technology.")
+    if st.button("Contact Me"):
+    #    st.navigation(st.session_state.Contact)
+       cont()
+
 
 
 
