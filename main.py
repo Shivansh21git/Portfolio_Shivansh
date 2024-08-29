@@ -62,7 +62,7 @@ email_address = "shivanshchauhan.228@gmail.com"
 mailto_link = f"mailto:{email_address}"
 linkd = "https://www.linkedin.com/in/shivanshchauhan2001"
 # Defining phone no
-phone_number = "+1234567890"
+phone_number = "+917456005172"
 # Create the tel link
 tel_link = f"tel:{phone_number}"
 
@@ -263,8 +263,8 @@ if selected == "Home":
     with col1:
         st.title(" ")
         st.subheader("Hi :wave:")
-        cont = st.container()
-        cont.markdown(html_code_name, unsafe_allow_html=True)
+        contn = st.container()
+        contn.markdown(html_code_name, unsafe_allow_html=True)
         if st.button("📬Contact me!"):
             cont()
          
